@@ -23,15 +23,6 @@ cacheSolve <- function(x, ...) {
   x$setinverse(inv)
   inv
 }
-The makeCacheMatrix function takes a matrix x as input (or creates an empty matrix if none is given) and returns a list of four functions:
-
-set: sets the value of the matrix
-get: gets the value of the matrix
-setinverse: sets the inverse of the matrix (for caching purposes)
-getinverse: gets the inverse of the matrix (for caching purposes)
-The cacheSolve function takes a makeCacheMatrix object x as input and computes the inverse of the matrix using the solve function. If the inverse has already been computed and cached in the makeCacheMatrix object, it retrieves it from the cache instead of recomputing it. If the inverse has not been cached, it computes the inverse, caches it in the makeCacheMatrix object, and returns the inverse.
-
-
 
 
 
